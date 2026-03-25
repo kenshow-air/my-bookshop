@@ -1,0 +1,11 @@
+@authUrl=https://85c19cc8trial.authentication.us10.hana.ondemand.com
+@clientid=sb-my-bookshop-85c19cc8trial-dev!t608994
+@clientsecret=95d48990-2338-4675-a877-7300e1033071$TzP0aoxTmdFLgnQ01OHEgU0O-qkLA-qGZvMsrFwh19Q=
+@server=hitachi--ltd--ino-pack--hitachi-iot-ino-dev-my-bookshop-srv.cfapps.eu10.hana.ondemand.Content-MD5: 
+
+### Get token
+# @name client_credentials_grant
+POST {{authUrl}}/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&client_id={{clientid}}&client_secret={{clientsecret}}
