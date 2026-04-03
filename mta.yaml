@@ -69,10 +69,10 @@ resources:
           credential-types:
             - "binding-secret"
             - "x509"
-          redirect-uris:
-            - https://*~{app-api/app-uri}/**
-    requires:
-      - name: app-api
+          # redirect-uris:
+    #         - https://*~{app-api/app-uri}/**
+    # requires:
+    #   - name: app-api
   - name: my-bookshop-db
     type: com.sap.xs.hdi-container
     parameters:
